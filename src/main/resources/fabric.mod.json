@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "aivillagerfabric",
+  "version": "${version}",
+  "name": "AIVillagerFabric",
+  "description": "The Neural Network, what's importing into Minecraft for villagers",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/aivillagerfabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "aivil.aivillagerfabric.client.AivillagerfabricClient"
+    ],
+    "main": [
+      "aivil.aivillagerfabric.Aivillagerfabric"
+    ]
+  },
+  "mixins": [
+    "aivillagerfabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
